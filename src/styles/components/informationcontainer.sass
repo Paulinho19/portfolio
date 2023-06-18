@@ -1,6 +1,14 @@
 @use '../variables'
 @use '../mixins'
 
+@media (max-width: 767px)
+  span
+    font-size: 13.2px
+    
+@media (min-width: 768px) and (max-width: 1400px) and (orientation: landscape)
+  #email-icon
+    display: none
+
 #information
   @include mixins.center
   flex-direction: column

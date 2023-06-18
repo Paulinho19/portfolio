@@ -1,5 +1,6 @@
 @use '../variables'
 
+
 #portfolio
   display: flex
   flex-wrap: wrap
@@ -13,3 +14,10 @@
     background: variables.$gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    @media (max-width: 767px)
+      justify-content: center
+      font-size: 8rem
+      span
+        display: none
+     
+    
